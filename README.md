@@ -16,7 +16,7 @@ python3 -W ignore ippsec-cli.py <keyword>
 Note: optionally you can go to /home/$USER/.bashrc and add this line so u can just launch it putting ippsec-cli in your terminal:
 
 vim /home/$USER/.bashrc
-alias ippsec-cli="python3 -W ignore /opt/ippsec-cli.py"
+alias ippsec-cli="python3 -W ignore /opt/ippsec-cli/ippsec-cli.py"
 source /home/$USER/.bashrc
 ```
 
