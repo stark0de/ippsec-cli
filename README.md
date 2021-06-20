@@ -6,6 +6,7 @@ This a simple tool to query the awesome ippsec.rocks website from your terminal
 
 ## Installation and usage
 ```
+cd /opt
 git clone https://github.com/stark0de/ippsec-cli
 cd ippsec-cli
 pip3 install -r requirements.txt
