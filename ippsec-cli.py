@@ -59,3 +59,4 @@ else:
     init()
     print(Fore.GREEN)
     print(tabulate(final, headers, tablefmt="github"))
+    print()
