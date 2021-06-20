@@ -18,6 +18,11 @@ driver = webdriver.Firefox(firefox_profile=profile,options=options, service_log_
 driver.get(webpage)
 searchbar = driver.find_element_by_tag_name('input')
 searchbar.send_keys(searchterm)
+test=driver.find_elements_by_class_name("noResults")
+for i in test:
+    if i.text == "No Results Found":
+        print(Fore.RED+"[-] No results found for search term: "+searchterm)
+        sys.exit()
 lnks=driver.find_elements_by_tag_name("a")
 td=driver.find_elements_by_tag_name("td")
 lista = []
@@ -51,12 +56,8 @@ for i in ytlink:
     cleanlist.insert(counter, i)
     counter+=3
 final=list(divide_chunks(cleanlist,n))
-
-if len(final) == 0:
-    print(Fore.RED+"[-] No results found for search term: "+searchterm)
-else:
-    headers=["Machine", "Description","Link"]
-    init()
-    print(Fore.GREEN)
-    print(tabulate(final, headers, tablefmt="github"))
-    print()
+headers=["Machine", "Description","Link"]
+init()
+print(Fore.GREEN)
+print(tabulate(final, headers, tablefmt="github"))
+print()
