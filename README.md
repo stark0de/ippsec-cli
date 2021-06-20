@@ -20,3 +20,5 @@ source /home/$USER/.bashrc
 ```
 
 Credits to @HexF_me,  @Shell_ock and of course to the awesome Ippsec ;)
+
+Note: I've set the string size limit to 100 characters in order to make sure tabulate can print it correctly, you can modify that if your screen is bigger
