@@ -2,6 +2,8 @@
 
 This a simple tool to query the awesome ippsec.rocks website from your terminal
 
+[![demo](https://asciinema.org/a/K2Y3sHcUC1MHhpiaiiZfYEfnh.svg)](https://asciinema.org/a/K2Y3sHcUC1MHhpiaiiZfYEfnh?autoplay=1)
+
 ## Installation and usage
 ```
 git clone https://github.com/stark0de/ippsec-cli
