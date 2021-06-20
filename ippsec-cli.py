@@ -5,6 +5,9 @@ from colorama import Fore,init
 import sys
 
 webpage = "https://ippsec.rocks/?#"
+if len(sys.argv) == 1:
+    print("Usage: ippsec-cli <keyword>")
+    sys.exit()
 searchterm = sys.argv[1]
 
 options = Options()
