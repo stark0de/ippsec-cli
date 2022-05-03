@@ -33,7 +33,7 @@ for lnk in lnks:
     youtubelink = lnk.get_attribute("href")
     ytlink.append(youtubelink)
 
-ytlink=ytlink[2:len(ytlink)-5]    
+ytlink=ytlink[4:len(ytlink)-5]    
 lista =lista[2:len(lista)]
 lista = [i.strip() for i in lista]
 cleanlist=[]
